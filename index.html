@@ -1,0 +1,230 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+		legend {
+			font-size: 2em;
+		}
+
+		label {
+			font-size: 1.5em;
+		}
+
+		p {
+			font-size: 1.5em;
+		}
+
+		select {
+			font-size: 1.5em;
+		}
+
+		input {
+			font-size: 1.5em;
+		}
+
+    </style>
+    <link rel="stylesheet" type="text/css">
+
+    <script>
+	    function modeChange(value)
+	      {
+	        if(value == 1)
+	        {
+	          document.input.mode1.style.backgroundColor = "violet";
+	          document.input.mode2.style.backgroundColor = "yellow";
+	        }
+
+	        if(value == 2)
+	        {
+	          document.input.mode1.style.backgroundColor = "yellow";
+	          document.input.mode2.style.backgroundColor = "violet";
+	        }
+	      }
+	  </script>
+</head>
+<body>
+    <!--CORTEZ, STEPHEN GABRIEL S.-->
+
+    <center>
+    	<img src="CORTEZ_IMAGES_CSAD/logo.png" alt="Logo of Ray-Ray's Pzizza">
+
+	    <form name="input" action="#" method="GET">
+		    <fieldset style="width: 50%;">
+			    <legend style="text-align: center;">Pizza Ordering Form</legend>
+
+			    <div style="text-align: left;">
+				    <label for="fullName">Full Name:</label>
+				    <input type="text" name="fullName"><br><br>
+
+				    <label for="completeAddress">Complete Address:</label>
+				    <input type="text" name="completeAddress"><br><br>
+
+				    <label for="contactNumber">Contact Number:</label>
+				    <input type="text" name="contactNumber"><br><br>
+
+				    <label for="email">Email Address:</label>
+				    <input type="text" name="emailAddress"><br>
+
+				    <p>Description of How To Get To Your Location:</p>
+				    <textarea name="description" style="margin: 0px; width: 934px; height: 182px;" placeholder="Please Type Here."></textarea>
+				</div>
+
+				<fieldset>
+					<legend>Burgers</legend>
+
+					<div style="">
+						<label for="bQuantity">How many orders of <b>Burgers</b> would you like?: </label>
+				    	<input type="text" name="bQuantity" maxlength="2" size="2"><br><br>
+
+						<label for="patties">How many Patties would you like on the burger?: </label>
+				    	<input type="text" name="patties" maxlength="2" size="2">
+
+						<p>Toppings:</p>
+
+						<table>
+							<tr>
+								<td>
+									<input type="checkbox" name="cheese" value="cheese">
+									<label for="cheese">Cheese</label>
+								</td>
+								<td>
+									<input type="checkbox" name="coleslaw" value="coleslaw">
+									<label for="coleslaw">Coleslaw</label>
+								</td>
+								<td>
+									<input type="checkbox" name="tomato" value="tomato">
+									<label for="tomato">Tomato</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" name="onion" value="onion">
+									<label for="onion">Onion</label>
+								</td>
+								<td>
+									<input type="checkbox" name="cucumber" value="cucumber">
+									<label for="cucumber">Cucumber</label>
+								</td>
+								<td>
+									<input type="checkbox" name="bacon" value="bacon">
+									<label for="bacon">Bacon</label>
+								</td>
+							</tr>
+						</table>
+
+						<br>
+
+						<label for="buns">Choice of Bun: </label>
+				    	<select id="buns">
+				    		<option value="white">White Bun</option>
+				    		<option value="wheat">Wheat Bun</option>
+				    	</select>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Pasta</legend>
+
+					<label for="pasta">How many orders of <b>Pasta</b> would you like?: </label>
+				    <input type="text" name="pasta" maxlength="2" size="2"><br><br>
+
+					<label for="sauce">Choice of Sauce:</label>
+				    	<select id="sauce">
+				    		<option value="carbonara">Carbonara</option>
+				    		<option value="pesto">Pesto</option>
+				    		<option value="spaghetti">Spaghetti</option>
+				    	</select>
+
+				    <p>Additional: </p>
+
+				    <table>
+						<tr>
+							<td>
+								<input type="checkbox" name="exCheese" value="exCheese">
+								<label for="exCheese">Extra Cheese</label>
+							</td>
+							<td>
+								<input type="checkbox" name="exSauce" value="exSauce">
+								<label for="exSauce">Extra Sauce</label>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+
+				<fieldset>
+					<legend>Fries</legend>
+
+					<label for="patties">How many orders of <b>Fries</b> would you like?: </label>
+				    <input type="text" name="patties" maxlength="2" size="2"><br><br>
+
+				    <label for="fSize">Size:</label>
+				    	<select id="fSize">
+				    		<option value="fSmall">Small</option>
+				    		<option value="fMed">Medium</option>
+				    		<option value="fLarge">Large</option>
+				    	</select>
+
+				    &nbsp;&nbsp;&nbsp;
+
+				    <label for="fFlavor">Flavor:</label>
+				    	<select id="fFlavor">
+				    		<option value="fPlain">Plain</option>
+				    		<option value="fBbq">Barbeque</option>
+				    		<option value="fCheese">Cheese</option>
+				    		<option value="fSour">Sour Cream</option>
+				    	</select>
+				</fieldset>
+
+				<fieldset>
+					<legend>Drinks</legend>
+
+					<label for="patties">How many <b>Drinks</b> would you like?: </label>
+				    <input type="text" name="patties" maxlength="2" size="2"><br><br>
+
+				    <label for="dDrink">Drink: </label>
+				    	<select id="dDrink">
+				    		<option value="dWater">Water</option>
+				    		<option value="dCoke">Coke</option>
+				    		<option value="dPepsi">Pepsi</option>
+				    		<option value="dSprite">Sprite</option>
+				    	</select>
+
+				    &nbsp;&nbsp;&nbsp;
+
+				    <label for="dSize">Size:</label>
+				    	<select id="dSize">
+				    		<option value="dSmall">Small</option>
+				    		<option value="dMed">Medium</option>
+				    		<option value="dLarge">Large</option>
+				    	</select>
+				</fieldset>
+
+				<fieldset>
+					<legend>Mode of Payment</legend>
+
+					<table>
+						<tr>
+							<td>
+								<button type="button" id="mode1" style="background-color: yellow; width: 100px; height: 50px; margin-right: 30px;" onclick="modeChange('1')">Delivery</button>
+								<button type="button" id="mode2" style="background-color: yellow; width: 100px; height: 50px;" onclick="modeChange('2')">Pick-Up</button>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+
+				<div style="text-align: left;">
+					<p>Feedback on How to Improve our Ordering System:</p>
+					<textarea name="feedback" placeholder="Please Type Here." style="margin: 0px; width: 934px; height: 182px;"></textarea>
+				</div>
+
+				<div style="margin-top: 30px;">
+					<button type="button" id="submit" style="background-color: yellow; width: 200px; height: 50px; margin-right: 100px;">Submit Form</button>
+					<button type="button" id="clear" style="background-color: yellow; width: 200px; height: 50px">Clear Form</button>
+				</div>
+			</fieldset>
+	    </form>
+	</center>
+</body>
+</html>
